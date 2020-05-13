@@ -20,14 +20,21 @@ namespace FinalExam
 
         public override string ToString()
         {
-            return $"{Os_Image}{Name}";
+            return string.Format ($"{Name}");
+        }
+
+        public decimal IncressPrice { get; set; }
+        
+        public void Deposit(decimal amount)
+        {
+            IncressPrice = (IncressPrice / amount) * 100;
         }
 
     }
 
-    
-
    
+
+
 
     public class PhoneData : DbContext
     {   

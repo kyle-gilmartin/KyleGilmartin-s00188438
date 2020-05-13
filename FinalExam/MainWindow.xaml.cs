@@ -21,7 +21,9 @@ namespace FinalExam
      
     public partial class MainWindow : Window
     {
+        
         PhoneData db = new PhoneData();
+       
         public MainWindow()
         {
             InitializeComponent();
@@ -30,10 +32,29 @@ namespace FinalExam
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             var query = from p in db.Phones
-                        orderby p.Name
-                        select p.Name;
-
+                        select p;
+                        
+               
             LboxPhone.ItemsSource = query.ToList();
+        }
+
+        private void LboxPhone_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Phone selectedPhone = LboxPhone.SelectedItem as Phone;
+
+            if (selectedPhone != null)
+            {
+                string price = $"Phone Price: €{selectedPhone.Price}";
+                TBL_Price.Text = price;
+            }
+
+            if (selectedPhone != null)
+            {
+                string image = $"{selectedPhone.Phone_Image}";
+                Img_Phone.Source = new BitmapImage(new Uri(selectedPhone.Phone_Image,UriKind.Relative));
+            }
+
+
         }
     }
 }
