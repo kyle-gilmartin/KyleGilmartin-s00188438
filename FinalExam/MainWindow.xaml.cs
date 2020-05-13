@@ -18,13 +18,22 @@ namespace FinalExam
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+     
     public partial class MainWindow : Window
     {
+        PhoneData db = new PhoneData();
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            var query = from p in db.Phones
+                        orderby p.Name
+                        select p.Name;
+
+            LboxPhone.ItemsSource = query.ToList();
+        }
     }
 }

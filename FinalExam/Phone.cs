@@ -18,7 +18,14 @@ namespace FinalExam
      
         public virtual List<Phone> Phones { get; set; }
 
+        public override string ToString()
+        {
+            return $"{Os_Image}{Name}";
+        }
+
     }
+
+    
 
    
 
