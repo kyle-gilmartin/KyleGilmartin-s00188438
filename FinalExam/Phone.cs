@@ -7,26 +7,25 @@ using System.Threading.Tasks;
 
 namespace FinalExam
 {
-    class Phone
+    public class Phone
     {
+        public int PhoneID { get; set; }
         public string Name { get; set; }
         public int Price { get; set; }
         public string OperatingSystem { get; set; }
         public string Os_Image { get; set; }
         public string Phone_Image { get; set; }
-
-        public virtual List<phone> Phones { get; set; }
+     
+        public virtual List<Phone> Phones { get; set; }
 
     }
 
-    class phone
-    {
-       
-    }
+   
 
     public class PhoneData : DbContext
-    {
-        public DbSet<phone> Phones { get; set; }
+    {   
+        public PhoneData() : base("MyPhoneData") { }
+        public DbSet<Phone> Phones { get; set; }
     }
 
     

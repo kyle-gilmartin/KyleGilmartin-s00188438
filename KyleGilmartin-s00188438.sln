@@ -5,6 +5,16 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalExam", "FinalExam\FinalExam.csproj", "{F753E990-D921-426B-B674-99F92CC46D53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgramData", "ProgramData\ProgramData.csproj", "{65AB16D4-92A9-4C65-B0B8-1723C8F12515}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{8E82E693-C200-48D3-B8C2-7D8612FBA13D}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Desktop\Desktop\images\android.png = C:\Users\Desktop\Desktop\images\android.png
+		C:\Users\Desktop\Desktop\images\apple.png = C:\Users\Desktop\Desktop\images\apple.png
+		C:\Users\Desktop\Desktop\images\iphone11.png = C:\Users\Desktop\Desktop\images\iphone11.png
+		C:\Users\Desktop\Desktop\images\s20.jpg = C:\Users\Desktop\Desktop\images\s20.jpg
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,10 @@ Global
 		{F753E990-D921-426B-B674-99F92CC46D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F753E990-D921-426B-B674-99F92CC46D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F753E990-D921-426B-B674-99F92CC46D53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65AB16D4-92A9-4C65-B0B8-1723C8F12515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65AB16D4-92A9-4C65-B0B8-1723C8F12515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65AB16D4-92A9-4C65-B0B8-1723C8F12515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65AB16D4-92A9-4C65-B0B8-1723C8F12515}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
